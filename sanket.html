@@ -10,9 +10,6 @@
     <meta name="robots" content="INDEX , FOLLOW">
     <!-- how to link external css -->
     <link rel="stylesheet" href="sanket.css">
-    <!-- how to link external javascript -->
-    <script src="sanket.js"></script>
-
 </head>
 
 <body>
@@ -41,24 +38,24 @@
             </tr>
         </thead>
         <tbody>
-                <tr>
-                    <td>1.</td>
-                    <td>Gujrat technological university (BE) 5th sem</td>
-                    <td>2023</td>
-                    <td>80.00%</td>
-                </tr>
-                <tr>
-                    <td>2.</td>
-                    <td>GSEB-12TH</td>
-                    <td>2020</td>
-                    <td>75.6%</td>
-                </tr>
-                <tr>
-                    <td>3.</td>
-                    <td>GSEB-10TH</td>
-                    <td>2018</td>
-                    <td>83.16%</td>
-                </tr>
+            <tr>
+                <td>1.</td>
+                <td>Gujrat technological university (BE) 5th sem</td>
+                <td>2023</td>
+                <td>80.00%</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>GSEB-12TH</td>
+                <td>2020</td>
+                <td>75.6%</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>GSEB-10TH</td>
+                <td>2018</td>
+                <td>83.16%</td>
+            </tr>
         </tbody>
     </table>
     <h3>HOBBIES</h3>
@@ -68,6 +65,50 @@
         <li>watching movies</li>
         <li>coding</li>
     </ul>
+    <h4>Give review</h4>
+    <form action="sanket.php"></form>
+    <label for="name">Name</label>
+    <!-- clicking on name cursor is automatic goes on the namebox -->
+    <div>
+      <input type="text" , name="myname" id="name">
+    </div>
+    <label for="email">E-mail</label>
+    <div>
+        <input type="email" ,name="myemail" id ="email">
+    </div>
+    <label for="xender">xender</label>
+    <div>
+        male<input type="radio" name="myxender" id = "xender"> female<input type="radio" name="myxender" id = "xender"> other<input type ="radio" name ="myxender" id = "xender">
+    </div>
+    <div>
+        birthdate : <input type="date" name="mybdate">
+    </div>
+    <div>
+        give feedback: <br><textarea name="myfeedback" cols="30" rows="5"></textarea>
+    </div>
+    <div>
+        <label for="city">City</label>
+        <select name="mycity" id="city">
+            <option value="surat">surat</option>
+            <option value="ahemdabad">ahemdabad</option>
+            <option value="vadodara">vadodara</option>
+            <option value="other">other</option>
+        </select>
+    </div>
+    <h4>rating</h4>
+    <div>
+       *     <input type="checkbox" name="rate" ><br>
+       **    <input type="checkbox" name="rate" ><br>
+       ***   <input type="checkbox" name="rate" ><br>
+       ****  <input type="checkbox" name="rate" ><br>
+       ***** <input type="checkbox" name="rate" ><br>
+    </div>
+    <div>
+        <input type="submit" value="submit">
+    </div>
+    <div>
+        <input type="reset" value="reset">
+    </div>
 </body>
 
 </html>
