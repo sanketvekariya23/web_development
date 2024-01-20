@@ -8,23 +8,53 @@
     <meta name="description" content="this is sanket's Portfolio">
     <meta name="keywords" content="sanket , Portfolio">
     <meta name="robots" content="INDEX , FOLLOW">
-    <!-- how to link external css -->
+    <!-- external css -->
     <link rel="stylesheet" href="sanket.css">
+    <!-- internal css -->
+    <!-- <style>
+        p1{
+            color :rgb(100, 8, 221);
+            /* background-color: aliceblue; */
+        }
+    </style> -->
 </head>
 
+
 <body>
-    <h1> this is sanket's Portfolio</h1>
-    <p1>hello gretting, <br> i am sanket vekariya and i am student of <strong>
-            computer engineering </strong> and i currently learn machine learning </p1>
-    <br><br>
-    <p2><strong> my skills and programming languages and technologies</strong><br>
-        <br>c <br>java and oop <br> python<br>data science<br>data-strucutre and algorithms <br> operating system <br>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">About</a></li>
+                <li><a href="#" target="_blank">Help</a></li>
+                <li><a href="#" target="_blank">Contact us</a></li>
+                <div class="search"><input type="search" placeholder="search here......."></div>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="Portfolio"> This is Sanket's Portfolio.</h1>
+    <!-- inline css -->
+    <!-- <p1 style = "color : rgb(95, 29, 219)">hello gretting, <br> i am sanket vekariya and i am student of <strong>
+            computer engineering </strong> and i currently learn machine learning </p1> -->
+    <p id="introduction">Hello gretting☺, <br> I am sanket vekariya and i am
+        Computer Engineering student, As computer Engineering student, i specialize in leveraging cutting-edge
+        technologies to solve complex probles. My Portfolio showcases a diverse range of projects,demonstrating
+        proficiency in software engineering and system integration with strong tools and programming languages such as
+        Git and GitHub,MySQL, jupyter notebook, python, java, c, html, css, javascript.my commitments to continuous
+        learning and adaptibility is evident in my ability to taken new challenges with creativity and precision,
+        explore my portfolio to witness a fusion of theoretical knowledge and practical application in dynamic feild of
+        computer engineering.
+        <br><a href="https://www.linkedin.com/in/sanket-vekariya-00b85a23a/" target="_blank">contact us</a>
+    </p>
+    <div id="skill" class="skills">my skills and programming languages and technologies</div>
+    <p>c <br>java and oop <br> python<br>data science<br>data-strucutre and algorithms <br> operating system <br>
         software engineerig <br> computer networks <br>database management system | MySQL <br> Git and GitHub
-    </p2>
-    <br><br>
-    <a href="https://www.linkedin.com/in/sanket-vekariya-00b85a23a/" target="_blank">click here for my linkedin </a>
-    <br>
-    <a href="https://github.com/sanketvekariya23" target="_blank">click here for my GitHub </a>
+    </p>
+    <div id="linkedin" class="container"><a href="https://www.linkedin.com/in/sanket-vekariya-00b85a23a/"
+            target="_blank">click here for my linkedin
+        </a></div>
+    <div id="github" class="container"><a href="https://github.com/sanketvekariya23" target="_blank">click here for my
+            GitHub </a></div>
     <!-- <br><img src="" alt="remote image"> -->
     <br>
     <h3>My Qualification</h3>
@@ -59,7 +89,7 @@
         </tbody>
     </table>
     <h3>HOBBIES</h3>
-    <ul type = "circle">
+    <ul type="circle">
         <li>playing chess</li>
         <li>playing kabaddi</li>
         <li>watching movies</li>
@@ -70,15 +100,16 @@
     <label for="name">Name</label>
     <!-- clicking on name cursor is automatic goes on the namebox -->
     <div>
-      <input type="text" , name="myname" id="name">
+        <input type="text" , name="myname" id="name">
     </div>
     <label for="email">E-mail</label>
     <div>
-        <input type="email" ,name="myemail" id ="email">
+        <input type="email" ,name="myemail" id="email">
     </div>
     <label for="xender">xender</label>
     <div>
-        male<input type="radio" name="myxender" id = "xender"> female<input type="radio" name="myxender" id = "xender"> other<input type ="radio" name ="myxender" id = "xender">
+        male<input type="radio" name="myxender" id="xender"> female<input type="radio" name="myxender" id="xender">
+        other<input type="radio" name="myxender" id="xender">
     </div>
     <div>
         birthdate : <input type="date" name="mybdate">
@@ -97,11 +128,11 @@
     </div>
     <h4>rating</h4>
     <div>
-       *     <input type="checkbox" name="rate" ><br>
-       **    <input type="checkbox" name="rate" ><br>
-       ***   <input type="checkbox" name="rate" ><br>
-       ****  <input type="checkbox" name="rate" ><br>
-       ***** <input type="checkbox" name="rate" ><br>
+        * <input type="checkbox" name="rate"><br>
+        ** <input type="checkbox" name="rate"><br>
+        *** <input type="checkbox" name="rate"><br>
+        **** <input type="checkbox" name="rate"><br>
+        ***** <input type="checkbox" name="rate"><br>
     </div>
     <div>
         <input type="submit" value="submit">

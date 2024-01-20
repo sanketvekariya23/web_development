@@ -1,0 +1,103 @@
+/* external css */
+/* id selector */
+/* .navbar li{
+    float: left;
+} */
+.search{
+    color:  white;
+    float: right;
+    padding-right: 30px;
+}
+.navbar {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+.navbar li {
+    float: left;
+    padding: 0px 10px;
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+}
+.navbar ul {
+    overflow: auto;
+}
+
+#introduction {
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    background-color: #fcfcfc;
+    border-color: blue;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-top: 8px;
+    text-align: justify;
+    padding-bottom: 5px;
+    width: 500px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.356), inset 20px 20px 60px rgba(99, 99, 99, 0.288);
+}
+
+#contactus {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+    background-color: rgb(35, 66, 204);
+    color: white;
+}
+
+a:hover {
+    color: white;
+    background-color: blue;
+}
+
+/* .container{ */
+/* border: 2px solid rgb(5, 218, 233); */
+/* border-radius: 15px; */
+/* width: 250px; */
+/* } */
+#skill {
+    /* border: 2px solid blue; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 600px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* width:100%;
+    float: left; */
+}
+
+/* element selector */
+/* p1{
+    border : 2px solid black;
+} */
+
+#Portfolio {
+    border: 2px solid black;
+    padding-left: 250px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: antiquewhite;
+    margin: auto;
+    width: 500px;
+    /* height:25px;
+    width :1000px; */
+    font-size: 20px;
+    border-color: rgb(7, 40, 226);
+    border-radius: 10px;
+    /* background-color: white; */
+    /* background-image: url('https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?size=338&ext=jpg&ga=GA1.1.632798143.1705449600&semt=sph'); */
+    /* background-position: top right;     */
+}
