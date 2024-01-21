@@ -1,0 +1,87 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url('project.jpg');
+}
+*{
+    font-family: "Trirong", serif;
+}
+.left{
+/* border:2px solid black; */
+color: white;
+display: inline-block;
+position: absolute;
+top: 30px;
+margin-left: 20px;
+}
+
+.left img{
+    width: 150px;
+}
+.mid{
+    /* border:2px solid rgb(55, 0, 255); */
+    position: absolute;
+    display: inline-block;
+    left: 393px;
+    top:49px;
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar li a{
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    text-decoration: none;
+    text-shadow: 5px 5px 5px black;
+}
+.navbar li a:hover{
+    color: black;
+    text-shadow: 5px 5px 5px white;
+    text-decoration: underline;
+}
+.right{
+    position: absolute;
+    display: inline-block;
+    right: 71px;
+    top :50px;
+    /* border:2px solid rgb(13, 255, 5); */
+}
+.right .btn{
+    width: 109px;
+}
+.container{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    /* display: inline-block; */
+    margin: 187px 367px;
+    /* padding: 7px 370px  */
+    width: 644px;
+    height: 341px;
+    color: white;
+    text-align:  center;
+}
+.container h3{
+    text-align: center;
+    text-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+.btn{
+    padding :3px;
+    margin: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 80px;
+}
+.form-grp input{
+    border-radius: 10px;
+    /* display: block; */
+    /* margin: auto; */
+    margin: 12px 19px;
+    padding: 5px 4px;
+    border: 2px solid black;
+    width: 290px;
+
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+}

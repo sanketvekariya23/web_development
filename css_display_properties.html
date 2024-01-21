@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css display properties </title>
+    <style>
+img{
+    width: 70px;
+    margin: auto;
+    display: block;              /*  img is inline so here we have done display block and margin auto  */
+}
+h3,img{
+   border: 2px solid black; 
+   text-align: center;
+}
+header{
+    margin: auto;
+    width: 40%;                  /*we can set width in only block element we can not set width in inline becuase inline takes required space        */
+}
+.box{
+    border: 2px solid black;
+    background-color: grey;
+    margin: 2px 2px;
+    padding: 2px 2px;
+    display: inline-block;
+    width: 29%;
+    box-sizing: border-box ;
+}
+*{
+    box-sizing: border-box;
+}
+/* inline mean only take required space and block means take whole block */
+    </style>
+</head>
+<body>
+    <header class = "CDP">
+        <img src="photo.jpg" alt="loading image">
+        <h3>hello this is sanket, welcome to my website</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h2 class = "heading">this is heading</h2>
+            <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis officia beatae obcaecati a nesciunt soluta, unde, consequatur in porro animi nam nulla, quae libero delectus tenetur tempore quod error. Quisquam?dolor sit amet consectetur adipisicing elit. Excepturi, non perspiciatis! Inventore culpa minus enim tempore commodi odit quas deleniti natus neque veritatis.</p>
+        </div>
+        <div class="box">
+            <h2 class = "heading">this is heading</h2>
+            <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis officia beatae obcaecati a nesciunt soluta, unde, consequatur in porro animi nam nulla, quae libero delectus tenetur tempore quod error. Quisquam?dolor sit amet consectetur adipisicing elit. Excepturi, non perspiciatis! Inventore culpa minus enim tempore commodi odit quas deleniti natus neque veritatis.</p>
+        </div>
+        <div class="box">
+            <h2 class = "heading">this is heading</h2>
+            <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis officia beatae obcaecati a nesciunt soluta, unde, consequatur in porro animi nam nulla, quae libero delectus tenetur tempore quod error. Quisquam?dolor sit amet consectetur adipisicing elit. Excepturi, non perspiciatis! Inventore culpa minus enim tempore commodi odit quas deleniti natus neque veritatis.</p>
+        </div>
+    </div>
+</body>
+</html>

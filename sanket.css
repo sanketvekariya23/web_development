@@ -3,6 +3,15 @@
 /* .navbar li{
     float: left;
 } */
+img{
+    width: 100px;
+    padding-left: 50%;
+    display: inline;
+}
+/* header{
+    display: inline;
+    width: 50%;
+} */
 .search{
     color:  white;
     float: right;
