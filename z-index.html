@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z index</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 100vh;
+            width: 100vw;
+    }
+    .box{
+        border: 2px solid black;
+        height: 130px;
+        width: 130px;
+        display:inline-block;
+        background-color: rgb(194, 192, 192);
+    }
+    #box-1{
+        position: relative;
+        right: 20px;
+        z-index: 10;
+        background-color: red;
+    }
+    #box-2{
+        position: relative;
+        left: 12px;
+        z-index: -9;
+       background-color: green; 
+    }
+    #box-3{
+        position: relative;
+        right: 20px;
+        background-color: yellow;
+    }
+    #box-4{
+        background-color: blue;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- for z-index position should be absolute relative fixed or sticky -->
+    <div class="container">
+        <div class="box" id="box-1">this is first box</div>
+        <div class="box" id="box-2">this is second box</div>
+        <div class="box" id="box-3">this is third box</div>
+        <div class="box" id="box-4">this is fourth box</div>
+    </div>
+</body>
+</html>

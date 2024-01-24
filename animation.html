@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation </title>
+    <style>
+        .container{
+            height: 500px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border:2px solid black;
+            background-color: grey;
+
+            animation: sanket;
+            animation-direction: normal;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.3s;
+            animation-iteration-count: infinite;
+            /* animation-name:  sanket2;
+            animation-duration: 4S;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            animation-direction: normal */
+        }
+        /* @keyframes sanket2 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 0px;
+                left: 100px;
+            }
+            75%{
+                top: 100px;
+                left:100px;
+            }
+            100%{
+                top:1000px;
+                left:0px;
+            }
+        } */
+        @keyframes sanket {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 500px;
+            }
+        }
+        .box{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            padding: 0px 10px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 11000px;
+
+        }
+        .box{
+            border: 2px solid black;
+            height: 130px; 
+            width: 130px;
+            /* background-color: rgb(204, 203, 203); */
+            display: inline-block;
+            margin: 5px 5px;
+            padding : 5px 5px;
+            /* position: static; */
+        }
+       /* #box-3{  */
+            /* overlapped box4 by box3 */
+            /* position: absolute; */
+        /* } */
+        /* #box-3{ */
+            /* gapped in old space */
+            /* position: relative; */
+            /* top: 20px; */
+            /* left: 50px; */
+        /* }  */
+
+        /* #box-4{
+            position: fixed;
+            right: 5px;
+            bottom: 5px;
+        } */
+        #box-4{
+            position: sticky;
+            top: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">first box-1</div>
+        <div class="box" id="box-2">second box-2</div>
+        <div class="box" id="box-3">third box-3</div>
+        <div class="box" id="box-4">fourth box-4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Audiowide", sans-serif;
+}
+header ::before{
+    content: "";
+    background: url('https://source.unsplash.com/user/wsanter') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity:0.09;
+}
+.container{
+    /* border: 2px solid white; */
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+li{
+    display: flex;
+    display: inline-block;
+    margin: 20px 30px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+h2{ 
+    display: flex;
+    justify-content: center;
+}

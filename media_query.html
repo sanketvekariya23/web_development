@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive website</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 100wh;
+            height: 100vh;
+        }
+        .box{
+            font-size: 80px;
+            display: none;
+            /* border: 2px solid black; */
+            text-align: center;
+            color: rgb(8, 8, 8);
+            background-color: aquamarine;
+        }
+        @media (max-width:375px){
+            #form1{
+                display: block;
+                color: black;
+                background-color: red;
+            }
+        }
+        @media(max-width: 700px) and (min-width : 375px){
+            #form2{
+                display: block;
+                color: rgb(19, 18, 18);
+                background-color: yellow;
+            }
+        }
+        @media (max-width : 1000px) and (min-width:700px){
+            #form3{
+                display: block;
+                color: rgb(255, 255, 255);
+                background: green;
+            }
+        }
+        @media(max-width:3683px) and (min-width:1000px){
+            #form4{
+                display: block;
+                columns: rgb(255, 255, 255);
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- website should change according the device type lets suppose mobiles tablets deskop computer or wide screen computer -->
+    <div class="container">
+        <div class="box" id="form1">this is for mobiles</div>
+        <div class="box" id="form3">this is for tablets</div>
+        <div class="box" id="form2">this is for deskop computer</div>
+        <div class="box" id="form4">this is for wide screen computer</div>
+    </div>
+</body>
+</html>
