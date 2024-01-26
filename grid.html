@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            /* grid-template-columns: 400px 100px auto; */
+            /* grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 2fr; */
+            /* grid-template-columns: repeat(4,2fr); */
+            grid-gap: 1rem;
+
+            /* for responsive */
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        }
+        /* spanning row and columns */
+        /* .box:first-child{
+            grid-column-start: 1;
+            grid-column-end:5;
+        }
+        .box:nth-child(5){
+            grid-column-start: 1;
+            grid-column-end: 5;
+        } */
+        /* .box:nth-child(6){
+            grid-row-start: 1;
+            grid-row-end: 20;
+        } */
+        .box{
+            border: 2px solid black;
+            background: rgb(175, 56, 175);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Item-1</div>
+        <div class="box">Item-2</div>
+        <div class="box">Item-3</div>
+        <div class="box">Item-4</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>
+        <div class="box">Item-7</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-9</div>
+        <div class="box">Item-10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid + media query</title>
+    <style>
+        .container{
+            display: grid;
+            margin: 0px 15px;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .box{
+            border: 2px solid black;
+            margin: 3px;
+            background-color: black;
+            color: white;
+            border-radius:8px ;
+        }
+        @media(max-width :300px){
+            body{
+                background-color: rgb(163, 162, 162);
+            }
+            .container{
+                grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+            }
+            #aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media(min-width :300px) and (max-width : 500px){
+            body{
+                background-color: rgb(82, 226, 226);
+            }
+            .container{
+                grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area:section ;
+        }
+        #aside{
+            grid-area:aside ;
+        }
+        #footer{
+            grid-area:footer ;
+        }
+        @media(min-width :500px)and (max-width : 800px){
+            body{
+                background-color: rgb(74, 204, 74);
+            }
+            .container{
+                grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media(min-width:800px){
+            body{
+                background-color: bisque;
+            }
+            .container{
+                grid-template-areas:
+                'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="navbar">
+            <span>home</span>
+            <span>about</span>
+            <span>contact us</span>
+            <span>help</span>
+        </div>
+        <div class="box" id="section">
+            <h2>This is Media query</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe reiciendis dolorum eaque repellendus non fugit molestias enim exercitationem repudiandae, suscipit sed fugiat modi!</p>
+        </div>
+        <div class="box" id="aside">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque cumque aspernatur beatae ducimus repellat! Voluptate ut libero, minus cum repellat dicta distinctio sit ducimus.</p>
+        </div>
+        <div class="box" id="footer">
+            <p>all rights are reserved &copy;</p>
+        </div>
+    </div>
+</body>
+</html>
