@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Litsening</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #btn {
+            margin: 10px 10px;
+            padding: 3px 3px;
+            background-color: plum;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        #btn:hover {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is heading</h1>
+        <div id="para">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae provident amet nesciunt earum, nisi
+            deserunt incidunt? Animi velit rem eum doloremque repudiandae sequi, molestias neque explicabo provident
+            vel, atque Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aliquam cumque autem laudantium
+            quod et omnis dolorem illo quis repellendus doloremque obcaecati esse, beatae quisquam quasi. Neque cumque
+            molestiae maiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea commodi eius, iste aperiam
+            error laudantium, facilis suscipit illum, cupiditate laboriosam odit. Delectus dolore impedit vero
+            temporibus mollitia aliquid voluptatem
+        </div>
+        <div id="para">
+
+            <!-- onclick event -->
+            <!-- <button id="btn" onclick="hide()">click to show/hide</button> -->
+            <button id="btn" onclick="togglehide()">toggle on para to hide</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    function togglehide() {
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run() {
+            alert("muse inside para")
+        });
+
+        para.addEventListener('mouseout', function run() {
+            alert("mouce outside of para")
+        });
+    }
+    function hide() {
+        let btn = document.getElementById('btn');
+        if (para.style.display != 'none') {
+            para.style.display = 'none';
+        }
+        else {
+            para.style.display = 'block';
+        }
+    }
+
+</script>
+
+</html>
