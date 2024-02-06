@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set timeout and clear timeout</title>
+</head>
+<body>
+    <div class="container">
+        <h1>HELLO , welcome to coding world.</h1>
+        time is <span id="time"></span>
+    </div>
+</body>
+
+<script>
+    // set time out and clear time out
+    // it allow us to run function once after  the interval of the time
+
+    function greet(name , greettext){
+        console.log("hello"+" "+ name+ " " + greettext);
+    }
+    
+    settimeoutID = setTimeout(greet, 5000,"sanket", "goodmorning");
+    console.log(settimeoutID);
+    clearTimeout(1); // --> after the cleartime out it never run 
+   
+   setintervalid = setInterval( greet, 1000 , "sanket" , "goodnight");
+    console.log(setintervalid);
+    clearInterval(2);
+
+    function Displaytime(){
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+    }
+
+    setInterval(Displaytime, 1000);
+</script>
+</html>
