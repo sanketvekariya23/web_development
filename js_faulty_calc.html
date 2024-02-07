@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faulty calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Welcome to coding world.</h3>
+    </div>
+</body>
+<script>
+    let a = prompt("enter a 1st number");
+    let b = prompt("enter a 2nd number");
+    let c = prompt("enter operation which you want to perform");
+
+   let obj = {
+        '+' : '*',
+        '-' : '/',
+        '/' : '**',
+        '*' : '+',
+    }
+    let random = Math.random();
+    console.log(random);
+
+    if(random>0.1){
+        alert(`Answer is ${eval(`${a} ${c} ${b}`)}`);
+    }
+    else{
+        c=obj[c];
+        alert(`Answer is ${eval(`${a} ${c} ${b}`)}`);
+    }
+</script>
+</html>
