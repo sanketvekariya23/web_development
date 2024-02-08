@@ -54,12 +54,13 @@ header::before {
     content: "";
     position: absolute;
     background: url('./project2/img1.avif') no-repeat center center/cover;
+    background-color: black;
     height: 440px;
     width: 100%;
     z-index: -1;
     top: 0px;
     left: 0px;
-    opacity: 0.8;
+    opacity: 0.;   
 }
 
 h2 {
