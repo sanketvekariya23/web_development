@@ -30,3 +30,4 @@ document.querySelector(".container").innerHTML =document.querySelector(".contain
 }
 
 video(url, description, Cname, view, duration);
+
